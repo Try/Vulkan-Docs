@@ -370,7 +370,7 @@ for the launch of child mesh tasks. See Vulkan API specification for more detail
 'Payload' is an optional pointer to the payload structure to pass to the generated mesh shader invocations.
 'Payload' must be the result of an *OpVariable* with a storage class of *TaskPayloadWorkgroupEXT*. +
  +
-The arguments are taken from the first invocation in each workgroup.
+The arguments are taken from the first active invocation in each workgroup.
 Any invocation must execute this instruction exactly once and under uniform
 control flow.
 This instruction also serves as an *OpControlBarrier* instruction, and also
